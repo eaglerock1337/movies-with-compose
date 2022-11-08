@@ -12,7 +12,6 @@ jobs:
       with:
         token: ${{ secrets.OKTETO_TOKEN }}
         url: ${{ secrets.OKTETO_URL }}
-        args: "--insecure-skip-tls-verify"
 
     - name: Deploy preview environment
       uses: okteto/deploy-preview@latest
