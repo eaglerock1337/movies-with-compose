@@ -19,9 +19,9 @@ class App extends Component {
         loaded: false
       },
       session: {
-        name: 'Cindy',
-        lastName: 'Lopez',
-        username: 'cindy',
+        name: 'Kanye',
+        lastName: 'West',
+        username: 'scoopitypoop',
         avatar: userAvatarImage
       },
       fixHeader: false
@@ -72,11 +72,12 @@ class App extends Component {
       <div className="App">
         <header className={`Header ${this.state.fixHeader ? 'fixed' : ''}`}>
           <div className="content">
-            <div className="logo">Movies</div>
+            <div className="logo">Moooooooooovies</div>
             <ul className="menu">
               <li className="selected">Home</li>
               <li>Movies</li>
               <li>My List</li>
+              <li>Your Mom</li>
             </ul>
             <UserProfile user={session} />
           </div>
@@ -142,10 +143,9 @@ class Hero extends Component {
       <div id="hero" className="Hero" style={{ backgroundImage: `url(${movieBackground})` }}>
         <div className="spring" />
         <div className="content">
-          <h1>Bohemian Rhapsody</h1>
+          <h1>Poopity Scoop</h1>
           <p>
-            Queen take the music world by storm when they form the rock &apos;n&apos; roll
-            band in 1970.
+            This NEXT verse...this NEXT verse though...THESE BARS!
           </p>
           <div className="button-container">
             <HeroButton class="play-button">
