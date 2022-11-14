@@ -9,6 +9,8 @@ services:
       - api
       - frontend
     restart: always
+    labels:
+      dev.okteto.com/auto-ingress: "domain"
 
   frontend:
     build: frontend
